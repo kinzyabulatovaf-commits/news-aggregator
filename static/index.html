@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Aggregator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">📰 NEWS</div>
+        <h1>Мировые новости</h1>
+    </header>
+
+    <main>
+        <!-- Выбор языка -->
+        <section class="lang-picker" id="langPicker">
+            <button class="lang-btn active" data-lang="ru">🇷🇺 Русский</button>
+            <button class="lang-btn" data-lang="en">🇬 English</button>
+            <button class="lang-btn" data-lang="es">🇪🇸 Español</button>
+            <button class="lang-btn" data-lang="de">🇩🇪 Deutsch</button>
+            <button class="lang-btn" data-lang="fr">🇫🇷 Français</button>
+        </section>
+
+        <!-- Даты (7 дней) -->
+        <section class="date-strip" id="dateStrip"></section>
+
+        <!-- Лента новостей -->
+        <div id="newsGrid" class="grid"></div>
+        
+        <!-- Пагинация -->
+        <div class="pagination">
+            <button id="moreBtn" class="hidden">📥 Ещё 10 новостей</button>
+        </div>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

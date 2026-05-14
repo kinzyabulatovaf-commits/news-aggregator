@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+feedparser
+deep-translator
+python-dateutil
+requests
