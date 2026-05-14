@@ -187,6 +187,5 @@ def get_news(lang: str = "ru", date: str = Query("latest"), offset: int = 0, lim
 
 app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="127.0.0.1", port=8000, reload=True)
+app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
+# Конец файла — больше ничего не пишем
